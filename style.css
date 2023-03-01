@@ -2,19 +2,73 @@ body {
     background-color: #00003f;
 }
 
-.grid-container {
+.grid-container-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #00008b;
-    row-gap: 20px;
-    ]
-
+    row-gap: 0px;
+    column-gap: 0px;
+    gap: 10px;
 }
 
-.grid-item {
+.grid-container-1 .grid-item {
 text-align: center;
 padding: 15px;
 color: white;
 background-color: #0000d8;
 
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-rows: repeat(3, 80px);
+    grid-template-columns: repeat(3, 1fr);
+border: #8b8b00 dashed;
+background-color: #00008b;
+
+}
+
+.grid-container-2 .item-1 {
+grid-row: span 3;
+grid-column: span 2;
+
+}
+
+.grid-container-2 .item-2 {
+    grid-row: span 1;
+
+}
+
+.grid-container-2 .grid-item {
+background-color: #0000d8;
+color: white;
+text-align: center;
+padding: 20px;
+margin: 5px;
+
+}
+
+.grid-container-3 {
+    display: grid;
+    background-color: #00008b;
+    border: #8b8b00 dashed;
+grid-template-areas: "item-a item-a item-b";
+
+}
+
+.grid-container-3 .grid-item {
+    background-color: #0000d8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+
+}
+
+.grid-container-3 .item-1 {
+    grid-area: item-a;
+}
+
+.grid-container-3 .item-2 {
+    grid-area: item-b;
 }
