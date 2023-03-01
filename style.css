@@ -1,0 +1,20 @@
+body {
+    background-color: #00003f;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #00008b;
+    row-gap: 20px;
+    ]
+
+}
+
+.grid-item {
+text-align: center;
+padding: 15px;
+color: white;
+background-color: #0000d8;
+
+}
