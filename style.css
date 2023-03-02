@@ -52,7 +52,10 @@ margin: 5px;
     display: grid;
     background-color: #00008b;
     border: #8b8b00 dashed;
-grid-template-areas: "item-a item-a item-b";
+grid-template-areas:
+"item-a item-a item-a"
+"item-b item-c item-c"
+". item-d item-d";
 
 }
 
@@ -62,7 +65,7 @@ grid-template-areas: "item-a item-a item-b";
     text-align: center;
     padding: 10px;
     margin: 2px;
-
+height: 80px;
 }
 
 .grid-container-3 .item-1 {
@@ -71,4 +74,14 @@ grid-template-areas: "item-a item-a item-b";
 
 .grid-container-3 .item-2 {
     grid-area: item-b;
+}
+
+.grid-container-3 .item-3 {
+    grid-area: item-c;
+
+}
+
+.grid-container-3 .item-4 {
+    grid-area: item-d;
+
 }
