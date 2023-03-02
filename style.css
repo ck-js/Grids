@@ -127,6 +127,14 @@ gap: 2px;
 
 }
 
+.grid-container-5 .item-article {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+
 .grid-container-5 .item-footer {
     grid-column: span 2;
 
@@ -134,4 +142,5 @@ gap: 2px;
 
 .grid-container-5 a {
     padding-left: 10px;
+    color: white;
 } 
