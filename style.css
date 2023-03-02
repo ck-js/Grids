@@ -91,10 +91,10 @@ height: 80px;
     background-color: #00008b;
     border: #8b8b00 dashed;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 1500px;
+grid-template-rows: 160px;
 grid-gap: 5px;
 padding: 5px;
-justify-items: end;
+justify-items: stretch;
 align-items: end;
 }
 
@@ -105,3 +105,33 @@ align-items: end;
     padding: 15px;
 height: auto;
 }
+
+.grid-container-5 {
+display: grid;
+background-color: #00008b;
+border: #8b8b00 dashed;
+ grid-template: repeat(3,1fr) / 1fr;
+gap: 2px;
+
+}
+
+.grid-container-5 .grid-item {
+    background-color: #0000d8;
+    color: white;
+    padding: 20px;
+
+}
+
+.grid-container-5 .item-header {
+    grid-column: span 2;
+
+}
+
+.grid-container-5 .item-footer {
+    grid-column: span 2;
+
+}
+
+.grid-container-5 a {
+    padding-left: 10px;
+} 
