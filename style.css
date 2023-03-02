@@ -144,3 +144,27 @@ align-items: center;
     padding-left: 10px;
     color: white;
 } 
+
+.grid-container-6 {
+    display: grid;
+    background-color: #00008b;
+    border: #8b8b00 dashed;
+grid-template: repeat(3, 360px) / repeat(3, 360px) ;
+gap:25px; 
+
+
+}
+
+.grid-container-6 .grid-item {
+background-color: #0000d8;
+color: white;
+margin-top: 20px;
+padding: 50px;
+;
+
+} 
+
+.grid-container-6 .item-header {
+    grid-row: span 3;
+
+}
